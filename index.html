@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Crystal Collector</title>
+    <title>Crystal Collector!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
@@ -19,12 +19,16 @@
 </head>
 <body>
     <div class="container-fluid text-center mt-3">
-        <h1>Crystal Collector</h1>
+        <h1><i class="far fa-gem fa-sm"></i>  Crystal Collector  <i class="far fa-gem fa-sm"></i></h1>
     </div>
     <div class="container text-center justify-content-center mt-3 mb-3">
-        <h2>Instructions</h2>
+        <div class="instruct">
+            <h3><span>Instructions</span></h3>
+            <i class="fas fa-angle-down fa-lg"></i>
+        </div>
+        
         <div class= "row text-justify justify-content-center">
-            <div class="col-md-7">
+            <div class="col-md-7 instReveal">
                 <ul class="fa-ul">
                     <li><i class="fas fa-gem fa-xs"></i>  You will be given a random number to match at the start of the game.</li>
                     <li><i class="fas fa-gem fa-xs"></i>  There are four crystals below. The value of each crystal is hidden from you until you click on it.</li>
@@ -36,45 +40,47 @@
         </div>
     </div>
 
-    <div class ="container-fluid text-center mt-3 mb-3">
-        <h4 class="result"></h4>
-        <div class="row justify-content-center mb-3">
-            <div class="col-md-1 mr-7">
-                <h4 class="winsHeader">WINS</h4>
-                <div class="wins"></div>
+    <div class ="container-fluid text-center justify-content-center mb-3">
+        <h2><span class="resultWin p-2 mb-3">You Win! Play Again!</span></h2>
+        <br>
+        <h2><span class="resultLose p-2 mb-3">You Lose! Try Again!</span></h2>
+        <div class="row text-center justify-content-center mb-4 mt-4">
+            <div class="col-xs-3 mr-7 mb-4">
+                <h4 class="winsHeader pr-4 pl-4">WINS</h4>
+                <h3 class="wins"></h3>
             </div>
-            <div class="col-md-1 ml-7">
-                <h4 class="losesHeader">LOSES</h4>
-                <div class="loses"></div>
+            <div class="col-xs-3 ml-7 mb-4">
+                <h4 class="losesHeader pr-4 pl-4">LOSES</h4>
+                <h3 class="loses"></h3>
             </div>
         </div>
         <div class="justify-content-center mb-3">
-            <h4>Match this Random Number!</h4>
-            <h2 class="ranScore"></h2>
+            <h3>Match This Random Number!</h3>
+            <h2 class="ranScore mb-5"></h2>
         </div>
 
         
-        <div class="row justify-content-center mt-3 mb-3 d-flex align-items-center">
-            <div class="col-md-2 mt-1">
+        <div class="row justify-content-center mb-5 d-flex align-items-center">
+            <div class="col-sm-2 mt-3">
                 <button>
                     <img class="crystal" id="crystalOne" src="assets/images/blue-crystal.png" alt="Blue Crystal">
                 </button>
                 
             </div>
 
-            <div class="col-md-2 mt-1">
+            <div class="col-sm-2 mt-3">
                 <button>
                     <img class="crystal" id="crystalTwo" src="assets/images/pink-crystal.png" alt="Pink Crystal">
                 </button>
             </div>
 
-            <div class="col-md-2 mt-1">
+            <div class="col-sm-2 mt-3">
                 <button>
                     <img class="crystal" id="crystalThree" src="assets/images/yellow-crystal.png" alt="Yellow Crystal">
                 </button>
             </div>
 
-            <div class="col-md-2 mt-1">
+            <div class="col-sm-2 mt-3">
                 <button>
                     <img class="crystal" id="crystalFour" src="assets/images/red-crystal.png" alt="Red Crystal">
                 </button>
@@ -82,8 +88,8 @@
 
         </div>
 
-        <div class="justify-content-center mb-3"></div>
-            <h4>Your Total Score Is:</h4>
+        <div class="justify-content-center mb-3">
+            <h3>Your Total Score Is:</h3>
             <h2 class="total"></h2>
         </div>
 
