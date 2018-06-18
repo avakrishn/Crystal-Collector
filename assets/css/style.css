@@ -6,7 +6,7 @@ body, html{
 
 }
 .crystal{
-    width: 62%;
+    width: 65%;
 }
 
 .crystal:hover{
@@ -15,7 +15,7 @@ body, html{
 }
 
 #crystalThree{
-    width: 42%;
+    width: 45%;
 }
 
 #crystalFour{
@@ -39,4 +39,11 @@ li {
 
 .winsHeader, .losesHeader{
     border-bottom: 2px white solid;
+}
+
+button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    outline:none;
 }
