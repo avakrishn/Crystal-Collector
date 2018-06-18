@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Crystal Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    
+    
+   
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">    
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     
-    <script src="assets/javascript/game.js"></script>
+   
 </head>
 <body>
     <div class="container-fluid text-center mt-3">
@@ -43,9 +48,9 @@
                 <div class="loses"></div>
             </div>
         </div>
-        <div class="row justify-content-center mb-3">
-            <h4>Match the Score:</h4>
-            <div class="ranScore"></div>
+        <div class="justify-content-center mb-3">
+            <h4>Match this Random Number!</h4>
+            <h2 class="ranScore"></h2>
         </div>
 
         
@@ -66,20 +71,20 @@
             <div class="col-md-2 mt-1">
                 <button>
                     <img class="crystal" id="crystalThree" src="assets/images/yellow-crystal.png" alt="Yellow Crystal">
-                <button>
+                </button>
             </div>
 
             <div class="col-md-2 mt-1">
                 <button>
                     <img class="crystal" id="crystalFour" src="assets/images/red-crystal.png" alt="Red Crystal">
-                <button>
+                </button>
             </div>
 
         </div>
 
-        <div class="row justify-content-center mb-3">
+        <div class="justify-content-center mb-3"></div>
             <h4>Your Total Score Is:</h4>
-            <div class="yourScore"></div>
+            <h2 class="total"></h2>
         </div>
 
     </div>

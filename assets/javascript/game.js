@@ -1,3 +1,47 @@
+
+var ranNum, crystal, ranCrystalNum, totalDisplay, ranNumDisplay;
+
+var total = 0; 
+
+
+
+
+// initilaizes the game when window is ready with the random number to be matched and the random button numbers
+$(window).ready(function() {
+    ranNumDisplay = $('.ranScore');
+    totalDisplay = $('.total'); 
+    
+    // random number between 19-120
+    ranNum = Math.floor(Math.random() * 102) + 19; 
+    ranNumDisplay.text(ranNum);
+
+    // sets the user's total 
+    totalDisplay = $('.total'); 
+    totalDisplay.text(total);
+
+
+
+});
+
+$(document).on('click', 'button', function(){
+
+    if($(this).data("num") === undefined){
+        ranCrystalNum = Math.floor(Math.random() * 12) + 1; 
+        $(this).data("num", ranCrystalNum);
+        total += ranCrystalNum;
+        totalDisplay.text(total);
+    }
+    else{
+        total += $(this).data("num");
+        totalDisplay.text(total);
+    }
+   
+});
+
+
+
+
+
 // random number to match score when game starts (19 - 120)
 
 //hidden values of crystals (1 - 12)
