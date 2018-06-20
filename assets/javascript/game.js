@@ -6,15 +6,17 @@ var wins = 0;
 var loses = 0;
 
 var result;
-
+var button;
 
 function restart(){
     //new random number
     ranNum = Math.floor(Math.random() * 102) + 19; 
     ranNumDisplay.text(ranNum);
 
+    button = $("button");
+
     // remove data-num attribute from button object
-    $( "button" ).removeData( "num" );
+    button.removeAttr("data-num");
 
     total = 0; 
     totalDisplay.text(total);
@@ -63,14 +65,14 @@ $(document).on('click', 'button', function(){
     clicked = $(this);
     $('.resultWin').hide();
     $('.resultLose').hide();
-    if($(this).data("num") === undefined){
+    if($(this).attr("data-num") === undefined){
         ranCrystalNum = Math.floor(Math.random() * 12) + 1; 
-        $(this).data("num", ranCrystalNum);
+        $(this).attr("data-num", ranCrystalNum);
         total += ranCrystalNum;
         totalDisplay.text(total);
     }
     else{
-        total += $(this).data("num");
+        total += parseInt($(this).attr("data-num"));
         totalDisplay.text(total);
     }
 
