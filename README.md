@@ -1,12 +1,13 @@
 # Crystal Collector
 
 ## Table of Contents 
+<a name="contents"></a>
 1. [About Crystal Collector](#about)
 2. [Technologies Used](#tech)
 3. [App Functionality](#function)
 4. [App Display](#display)
 
-## <a name="about"></a> About Crystal Collector
+## <a name="about"></a> About Crystal Collector 
 * Crystal Collector is an interactive game that uses jQuery to dynamically update the HTML page. 
 
 ## <a name="tech"></a> Technologies Used
@@ -38,6 +39,8 @@
 
 * The app also shows the number of rounds the player wins and loses. 
 
+[[Top]](#contents)
+
 ## <a name="display"></a> App Display
 
 **When the game starts the player sees the four crystals, the random number they must match, and their total score is set to zero.**
@@ -57,8 +60,13 @@
 
 ![Game Loss](https://raw.githubusercontent.com/avakrishn/Crystal-Collector/master/assets/images/game-lose.png)
 
+[[Top]](#contents)
+
+
 ### **Future Code Development:**
 * Source code will be developed over time to handle new features in the future.
 
 ### **Issues:**
 * If you find an issue while using the app or have a request, <a href="https://github.com/avakrishn/Crystal-Collector/issues" target="_blank">log the issue or request here</a>. These issues will be addressed in a future code update.
+
+[[Top]](#contents)
