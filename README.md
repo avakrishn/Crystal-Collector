@@ -56,3 +56,9 @@
 **The player loses if their total score goes above the random number they are trying to match. When the player loses the game will restart with a new random number and new hidden random crystal values will be generated.**
 
 ![Game Loss](https://raw.githubusercontent.com/avakrishn/Crystal-Collector/master/assets/images/game-lose.png)
+
+### **Future Code Development:**
+* Source code will be developed over time to handle new features in the future.
+
+### **Issues:**
+* If you find an issue while using the app or have a request, <a href="https://github.com/avakrishn/Crystal-Collector/issues" target="_blank">log the issue or request here</a>. These issues will be addressed in a future code update.
