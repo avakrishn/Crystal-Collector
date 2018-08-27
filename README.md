@@ -1,7 +1,7 @@
 # Crystal Collector
+<a name="contents"></a>
 
 ## Table of Contents 
-<a name="contents"></a>
 1. [About Crystal Collector](#about)
 2. [Technologies Used](#tech)
 3. [App Functionality](#function)
